@@ -8,6 +8,7 @@ green=`tput setaf 2`
 reset=`tput sgr0`
 # e.g. echo "${red}red text ${green}green text${reset}"
 echo "${green}Adding Universe repository and updating${reset}"
+echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 apt-add-repository universe
 apt-get update
 echo "${green}Adding dependencies, graphics libraries and tools${reset}"
