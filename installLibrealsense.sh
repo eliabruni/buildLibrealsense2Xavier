@@ -62,7 +62,7 @@ git checkout $LIBREALSENSE_VERSION
 
 # Install the dependencies
 cd $INSTALL_DIR
-sudo ./scripts/installDependencies.sh
+sudo buildLibrealsense2Xavier/scripts/installDependencies.sh
 
 cd $LIBREALSENSE_DIRECTORY
 git checkout $LIBREALSENSE_VERSION
